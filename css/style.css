@@ -1,4 +1,4 @@
-*{margin: 0; paddin:0;}
+*{margin: 0; padding:0;}
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: block;
@@ -25,7 +25,7 @@ header {
   height: 50px;
   display: flex;
   flex-direction: column;
-  justify-contents: center;
+  justify-content: center;
   align-items: center;
   background-color: #d2dae2;
 }
@@ -54,4 +54,15 @@ a {
   list-style-type: none;
   color: #485460;
   text-align: left;
+}
+
+#video{
+ position: absolute;
+ 
+}
+.videocontainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
