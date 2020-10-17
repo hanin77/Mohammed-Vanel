@@ -56,13 +56,54 @@ a {
   text-align: left;
 }
 
-#video{
- position: absolute;
+#form{
+    margin-top: 10px;
  
 }
-.videocontainer{
+main {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+input[type="email"],input[type="submit"] {
+    height: 25px;
+    width: 100%;
+    margin-left:5%;
+    margin-right:5%;
+    border-radius: 0.7em;
+    background: none;
+    border: 2px solid;
+    border-color: #485460;
+    font-weight: bold;
+    color: #1e272e;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  input[type="submit"] {
+    background: #3c40c6;
+  }
+  ::placeholder{
+    color: #1e272e;
+    text-align: center;
+  }
+  
+  input[type="email"]:hover, input[type="email"]:focus {
+    border-color: #0be881;
+  }
+  
+  input[type="submit"]:hover {
+    border-color: #0be881;
+  }
+  input[type="submit"]:active {
+    background-color: #34e7e4;
+  }
+
+  @media (min-width:"500px") {
+    main {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    }
+
 }
